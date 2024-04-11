@@ -27,5 +27,17 @@ namespace Uge_15___Disaheim
                     return 0;
             }
         }
+
+        public double GetValueOfCourse(Course course)
+        {
+            double startedHour = course.DurationInMinutes / 60;
+            double remainderMinutes = course.DurationInMinutes % 60;
+            if (remainderMinutes > 0 )
+            {
+                startedHour += 1;
+            }
+            
+            return startedHour * 875;
+        }
     }
 }
