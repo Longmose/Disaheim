@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Uge_15___Disaheim
 {
-    public class Book
+    public class Book : Merchandise
     {
-        private string itemId;
         private string title;
         private double price;
 
-        public string ItemId
-        { get { return itemId; } set { itemId = value; } }
         public string Title
         { get { return title; } set {  title = value; } }
         public double Price 
@@ -21,8 +18,9 @@ namespace Uge_15___Disaheim
 
         public Book (string itemId)
         {
-            this.itemId = itemId;
+            this.ItemId = itemId;
         }
+
         public Book (string itemId, string title) 
             : this(itemId)
         { 
