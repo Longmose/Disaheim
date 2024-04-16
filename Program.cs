@@ -19,7 +19,7 @@ namespace Uge_15___Disaheim
             Book myBook = new Book("12", "hej", 12);
             Console.WriteLine(myBook.ToString());
 
-
+            
             Console.ReadLine();
         }
     }
