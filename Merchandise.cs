@@ -8,17 +8,11 @@ namespace Uge_15___Disaheim
 {
     public abstract class Merchandise
     {
-        public string ItemId {  get; set; }
-
-        //public Merchandise (string itemId)
-        //{
-        //   ItemId = itemId;
-        //}
+        public string ItemId { get; set; }
 
         public override string ToString()
         {
             return $"ItemId: {ItemId}";
         }
-
     }
 }

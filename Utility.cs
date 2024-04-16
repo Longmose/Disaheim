@@ -8,6 +8,24 @@ namespace Uge_15___Disaheim
 {
     public class Utility
     {
+        public double LowQualityValue = 12.5;
+        public double MediumQualityValue = 20.0;
+        public double HighQualityValue = 27.5;
+        public double CourseHourValue = 875.0;
+
+        public double GetValueOfMerchandise(Merchandise merchandise)
+        {
+            if (merchandise is Book book)
+            {
+                return GetValueOfBook(book);
+            }
+            else if (merchandise is Amulet amulet)
+            {
+                return GetValueOfAmulet(amulet);
+            }
+            return 0;
+        }
+
         public double GetValueOfBook(Book book)
         {
             return book.Price;
@@ -18,11 +36,11 @@ namespace Uge_15___Disaheim
             switch (amulet.Quality)
             {
                 case Level.low:
-                    return 12.5;
+                    return LowQualityValue;
                 case Level.medium:
-                    return 20.0;
+                    return MediumQualityValue;
                 case Level.high:
-                    return 27.5;
+                    return HighQualityValue;
                 default:
                     return 0;
             }
@@ -37,7 +55,7 @@ namespace Uge_15___Disaheim
                 startedHour += 1;
             }
             
-            return startedHour * 875;
+            return startedHour * CourseHourValue;
         }
     }
 }
