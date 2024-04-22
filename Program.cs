@@ -1,6 +1,6 @@
 ﻿
 
-namespace Uge_15___Disaheim
+namespace Disaheim
 {
     public enum Level
     {

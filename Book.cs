@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Uge_15___Disaheim
+namespace Disaheim
 {
     public class Book : Merchandise
     {
@@ -35,6 +35,11 @@ namespace Uge_15___Disaheim
         public override string ToString()
         {
             return $"ItemId: {ItemId}, Title: {Title}, Price: {Price}";
+        }
+
+        public override double GetValue()
+        {
+            return Price;
         }
     }
 }
