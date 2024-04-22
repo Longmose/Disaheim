@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Reflection.Metadata.BlobBuilder;
 
-namespace Uge_15___Disaheim
+namespace Disaheim
 {
     public class Controller
     {

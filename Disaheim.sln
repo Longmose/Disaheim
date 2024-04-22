@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Uge 15 - Disaheim", "Uge 15 - Disaheim.csproj", "{7205A7E3-6CAD-4397-A205-DB904C64B3D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disaheim", "Disaheim.csproj", "{7205A7E3-6CAD-4397-A205-DB904C64B3D5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisaheimTest", "..\DisaheimTest\DisaheimTest.csproj", "{CC4BC846-C3FA-44E4-85F7-D88B820B6F45}"
 EndProject

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Uge_15___Disaheim
+namespace Disaheim
 {
-    public abstract class Merchandise
+    public abstract class Merchandise : IValuable
     {
         public string ItemId { get; set; }
 
@@ -14,5 +14,6 @@ namespace Uge_15___Disaheim
         {
             return $"ItemId: {ItemId}";
         }
+        public abstract double GetValue();
     }
 }
